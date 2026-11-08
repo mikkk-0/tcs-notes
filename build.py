@@ -5,6 +5,7 @@
 и pdflatex, а все файлы публикации помещаются в каталог pdf/ этого проекта.
 """
 
+import hashlib
 import json
 import re
 import shutil
@@ -132,6 +133,14 @@ def main() -> None:
     payload = json.dumps(catalogue, ensure_ascii=False, indent=2)
     (HERE / "catalogue.json").write_text(payload + "\n", encoding="utf-8")
     (HERE / "catalogue.js").write_text("window.TCS_COURSES = " + payload + ";\n", encoding="utf-8")
+    assets = ("styles.css", "catalogue.js", "app.js")
+    version = hashlib.sha256(b"".join((HERE / asset).read_bytes() for asset in assets)).hexdigest()[:12]
+    index = HERE / "index.html"
+    html = index.read_text(encoding="utf-8")
+    for asset in assets:
+        html = re.sub(rf'(["\']){re.escape(asset)}(?:\?v=[a-f0-9]+)?\1',
+                      lambda match: f'{match.group(1)}{asset}?v={version}{match.group(1)}', html)
+    index.write_text(html, encoding="utf-8")
     print(f"Готово: {sum(len(c['lessons']) for c in catalogue)} тем, {sum(len(list((DEST / c['id']).rglob('*.pdf'))) for c in catalogue)} PDF")
 
 
