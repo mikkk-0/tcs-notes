@@ -20,7 +20,7 @@ function pdfLink(path, title, detail, symbol = "PDF") {
 }
 function renderHome() {
   document.title = "Конспекты по TCS";
-  content.innerHTML = `${crumbs(["Главная"])}<span class="eyebrow">Библиотека курсов</span><h1>Конспекты по теоретической информатике</h1><p class="intro">Все материалы курса в одном месте: откройте тему и читайте конспект, решайте задачи или смотрите разборы прямо с телефона.</p><div class="section-head"><h2>Курсы</h2><span class="count">${courses.length} курса</span></div><div class="grid">${courses.map(c => `<a class="card" href="#/course/${esc(c.id)}"><div><span class="card-kicker">Курс · ${c.lessons.length} тем</span><h3>${esc(c.name)}</h3><p>${esc(c.subtitle)}</p></div><div class="card-bottom"><span>Открыть темы</span><span class="card-arrow" aria-hidden="true">→</span></div></a>`).join("")}</div>`;
+  content.innerHTML = `${crumbs(["Главная"])}<span class="eyebrow">Библиотека курсов</span><h1>Конспекты по теоретической информатике</h1><p class="intro">Все материалы курса в одном месте: откройте тему и читайте конспект, решайте задачи или смотрите разборы прямо с телефона.</p><div class="section-head"><h2>Курсы</h2></div><div class="grid">${courses.map(c => `<a class="card" href="#/course/${esc(c.id)}"><div><span class="card-kicker">Курс · ${c.lessons.length} тем</span><h3>${esc(c.name)}</h3><p>${esc(c.subtitle)}</p></div><div class="card-bottom"><span>Открыть темы</span><span class="card-arrow" aria-hidden="true">→</span></div></a>`).join("")}</div>`;
 }
 function renderCourse(course) {
   document.title = `${course.name} — Конспекты TCS`;
