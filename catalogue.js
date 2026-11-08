@@ -1,0 +1,390 @@
+window.TCS_COURSES = [
+  {
+    "id": "fpt",
+    "name": "FPT-алгоритмы",
+    "subtitle": "Параметризованная сложность и алгоритмы",
+    "lessons": [
+      {
+        "number": 1,
+        "slug": "01-fpt-xp",
+        "title": "Параметр как часть постановки: FPT и XP",
+        "files": {
+          "notes": "pdf/fpt/notes/01-fpt-xp.pdf",
+          "assignments": "pdf/fpt/assignments/01-fpt-xp.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/01-fpt-xp.pdf"
+        }
+      },
+      {
+        "number": 2,
+        "slug": "02-branching",
+        "title": "Ограниченные деревья поиска и анализ ветвления",
+        "files": {
+          "notes": "pdf/fpt/notes/02-branching.pdf",
+          "assignments": "pdf/fpt/assignments/02-branching.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/02-branching.pdf"
+        }
+      },
+      {
+        "number": 3,
+        "slug": "03-kernelization",
+        "title": "Kernelization: безопасные правила и квадратичное ядро",
+        "files": {
+          "notes": "pdf/fpt/notes/03-kernelization.pdf",
+          "assignments": "pdf/fpt/assignments/03-kernelization.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/03-kernelization.pdf"
+        }
+      },
+      {
+        "number": 4,
+        "slug": "04-crowns",
+        "title": "Коронные разложения и ядро на 3k вершинах",
+        "files": {
+          "notes": "pdf/fpt/notes/04-crowns.pdf",
+          "assignments": "pdf/fpt/assignments/04-crowns.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/04-crowns.pdf"
+        }
+      },
+      {
+        "number": 5,
+        "slug": "05-lp-kernel",
+        "title": "LP-релаксация Vertex Cover и ядро на 2k вершинах",
+        "files": {
+          "notes": "pdf/fpt/notes/05-lp-kernel.pdf",
+          "assignments": "pdf/fpt/assignments/05-lp-kernel.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/05-lp-kernel.pdf"
+        }
+      },
+      {
+        "number": 6,
+        "slug": "06-sunflower",
+        "title": "Sunflower lemma и полиномиальное ядро d-Hitting Set",
+        "files": {
+          "notes": "pdf/fpt/notes/06-sunflower.pdf",
+          "assignments": "pdf/fpt/assignments/06-sunflower.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/06-sunflower.pdf"
+        }
+      },
+      {
+        "number": 7,
+        "slug": "07-compression",
+        "title": "Iterative compression: от большого решения к малому",
+        "files": {
+          "notes": "pdf/fpt/notes/07-compression.pdf",
+          "assignments": "pdf/fpt/assignments/07-compression.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/07-compression.pdf"
+        }
+      },
+      {
+        "number": 8,
+        "slug": "08-oct",
+        "title": "Odd Cycle Transversal: compression и минимальный разрез",
+        "files": {
+          "notes": "pdf/fpt/notes/08-oct.pdf",
+          "assignments": "pdf/fpt/assignments/08-oct.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/08-oct.pdf"
+        }
+      },
+      {
+        "number": 9,
+        "slug": "09-color-coding",
+        "title": "Color coding: вероятностный FPT для k-Path",
+        "files": {
+          "notes": "pdf/fpt/notes/09-color-coding.pdf",
+          "assignments": "pdf/fpt/assignments/09-color-coding.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/09-color-coding.pdf"
+        }
+      },
+      {
+        "number": 10,
+        "slug": "10-derandomization",
+        "title": "Дерандомизация color coding и random separation",
+        "files": {
+          "notes": "pdf/fpt/notes/10-derandomization.pdf",
+          "assignments": "pdf/fpt/assignments/10-derandomization.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/10-derandomization.pdf"
+        }
+      },
+      {
+        "number": 11,
+        "slug": "11-treewidth",
+        "title": "Древесные разложения: определения, сепараторы и поиск",
+        "files": {
+          "notes": "pdf/fpt/notes/11-treewidth.pdf",
+          "assignments": "pdf/fpt/assignments/11-treewidth.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/11-treewidth.pdf"
+        }
+      },
+      {
+        "number": 12,
+        "slug": "12-treewidth-dp",
+        "title": "DP по древесному разложению: Independent Set и Dominating Set",
+        "files": {
+          "notes": "pdf/fpt/notes/12-treewidth-dp.pdf",
+          "assignments": "pdf/fpt/assignments/12-treewidth-dp.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/12-treewidth-dp.pdf"
+        }
+      },
+      {
+        "number": 13,
+        "slug": "13-subset-dp",
+        "title": "Динамика по подмножествам: Set Cover и Steiner Tree",
+        "files": {
+          "notes": "pdf/fpt/notes/13-subset-dp.pdf",
+          "assignments": "pdf/fpt/assignments/13-subset-dp.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/13-subset-dp.pdf"
+        }
+      },
+      {
+        "number": 14,
+        "slug": "14-w-hardness",
+        "title": "Параметризованные редукции и W[1]-трудность",
+        "files": {
+          "notes": "pdf/fpt/notes/14-w-hardness.pdf",
+          "assignments": "pdf/fpt/assignments/14-w-hardness.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/14-w-hardness.pdf"
+        }
+      },
+      {
+        "number": 15,
+        "slug": "15-eth-seth",
+        "title": "ETH и SETH: количественные нижние оценки",
+        "files": {
+          "notes": "pdf/fpt/notes/15-eth-seth.pdf",
+          "assignments": "pdf/fpt/assignments/15-eth-seth.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/15-eth-seth.pdf"
+        }
+      },
+      {
+        "number": 16,
+        "slug": "16-kernel-lower-bounds",
+        "title": "Почему FPT-задача может не иметь полиномиального ядра",
+        "files": {
+          "notes": "pdf/fpt/notes/16-kernel-lower-bounds.pdf",
+          "assignments": "pdf/fpt/assignments/16-kernel-lower-bounds.pdf",
+          "hints": null,
+          "solutions": "pdf/fpt/solutions/16-kernel-lower-bounds.pdf"
+        }
+      }
+    ],
+    "extras": [
+      {
+        "title": "Экзамен",
+        "path": "pdf/fpt/exam.pdf"
+      },
+      {
+        "title": "Критерии экзамена",
+        "path": "pdf/fpt/exam_rubric.pdf"
+      }
+    ],
+    "hasHints": false
+  },
+  {
+    "id": "distributed",
+    "name": "Распределённые алгоритмы",
+    "subtitle": "Модели, локальные и глобальные алгоритмы, нижние оценки",
+    "lessons": [
+      {
+        "number": 1,
+        "slug": "01-models",
+        "title": "Модель распределённого алгоритма",
+        "files": {
+          "notes": "pdf/distributed/notes/01-models.pdf",
+          "assignments": "pdf/distributed/assignments/01-models.pdf",
+          "hints": "pdf/distributed/hints/01-models.pdf",
+          "solutions": "pdf/distributed/solutions/01-models.pdf"
+        }
+      },
+      {
+        "number": 2,
+        "slug": "02-symmetry",
+        "title": "Симметрия, ID и окраска пути",
+        "files": {
+          "notes": "pdf/distributed/notes/02-symmetry.pdf",
+          "assignments": "pdf/distributed/assignments/02-symmetry.pdf",
+          "hints": "pdf/distributed/hints/02-symmetry.pdf",
+          "solutions": "pdf/distributed/solutions/02-symmetry.pdf"
+        }
+      },
+      {
+        "number": 3,
+        "slug": "03-color-reduction",
+        "title": "Детерминированное сокращение цветов",
+        "files": {
+          "notes": "pdf/distributed/notes/03-color-reduction.pdf",
+          "assignments": "pdf/distributed/assignments/03-color-reduction.pdf",
+          "hints": "pdf/distributed/hints/03-color-reduction.pdf",
+          "solutions": "pdf/distributed/solutions/03-color-reduction.pdf"
+        }
+      },
+      {
+        "number": 4,
+        "slug": "04-local-tasks",
+        "title": "Локальные задачи: matching, cover, MIS",
+        "files": {
+          "notes": "pdf/distributed/notes/04-local-tasks.pdf",
+          "assignments": "pdf/distributed/assignments/04-local-tasks.pdf",
+          "hints": "pdf/distributed/hints/04-local-tasks.pdf",
+          "solutions": "pdf/distributed/solutions/04-local-tasks.pdf"
+        }
+      },
+      {
+        "number": 5,
+        "slug": "05-general-coloring",
+        "title": "Раскраска общего графа в LOCAL",
+        "files": {
+          "notes": "pdf/distributed/notes/05-general-coloring.pdf",
+          "assignments": "pdf/distributed/assignments/05-general-coloring.pdf",
+          "hints": "pdf/distributed/hints/05-general-coloring.pdf",
+          "solutions": "pdf/distributed/solutions/05-general-coloring.pdf"
+        }
+      },
+      {
+        "number": 6,
+        "slug": "06-congest",
+        "title": "Ограничение полосы: CONGEST",
+        "files": {
+          "notes": "pdf/distributed/notes/06-congest.pdf",
+          "assignments": "pdf/distributed/assignments/06-congest.pdf",
+          "hints": "pdf/distributed/hints/06-congest.pdf",
+          "solutions": "pdf/distributed/solutions/06-congest.pdf"
+        }
+      },
+      {
+        "number": 7,
+        "slug": "07-global-tasks",
+        "title": "Глобальные задачи: расстояния и MST",
+        "files": {
+          "notes": "pdf/distributed/notes/07-global-tasks.pdf",
+          "assignments": "pdf/distributed/assignments/07-global-tasks.pdf",
+          "hints": "pdf/distributed/hints/07-global-tasks.pdf",
+          "solutions": "pdf/distributed/solutions/07-global-tasks.pdf"
+        }
+      },
+      {
+        "number": 8,
+        "slug": "08-random-local",
+        "title": "Рандомизированные локальные алгоритмы",
+        "files": {
+          "notes": "pdf/distributed/notes/08-random-local.pdf",
+          "assignments": "pdf/distributed/assignments/08-random-local.pdf",
+          "hints": "pdf/distributed/hints/08-random-local.pdf",
+          "solutions": "pdf/distributed/solutions/08-random-local.pdf"
+        }
+      },
+      {
+        "number": 9,
+        "slug": "09-covers",
+        "title": "Покрытия графов и неразличимость",
+        "files": {
+          "notes": "pdf/distributed/notes/09-covers.pdf",
+          "assignments": "pdf/distributed/assignments/09-covers.pdf",
+          "hints": "pdf/distributed/hints/09-covers.pdf",
+          "solutions": "pdf/distributed/solutions/09-covers.pdf"
+        }
+      },
+      {
+        "number": 10,
+        "slug": "10-neighborhoods",
+        "title": "Локальные окрестности как инструмент нижних оценок",
+        "files": {
+          "notes": "pdf/distributed/notes/10-neighborhoods.pdf",
+          "assignments": "pdf/distributed/assignments/10-neighborhoods.pdf",
+          "hints": "pdf/distributed/hints/10-neighborhoods.pdf",
+          "solutions": "pdf/distributed/solutions/10-neighborhoods.pdf"
+        }
+      },
+      {
+        "number": 11,
+        "slug": "11-round-elimination",
+        "title": "Round elimination: один строгий шаг",
+        "files": {
+          "notes": "pdf/distributed/notes/11-round-elimination.pdf",
+          "assignments": "pdf/distributed/assignments/11-round-elimination.pdf",
+          "hints": "pdf/distributed/hints/11-round-elimination.pdf",
+          "solutions": "pdf/distributed/solutions/11-round-elimination.pdf"
+        }
+      },
+      {
+        "number": 12,
+        "slug": "12-sinkless",
+        "title": "Sinkless orientation и пределы устранения раундов",
+        "files": {
+          "notes": "pdf/distributed/notes/12-sinkless.pdf",
+          "assignments": "pdf/distributed/assignments/12-sinkless.pdf",
+          "hints": "pdf/distributed/hints/12-sinkless.pdf",
+          "solutions": "pdf/distributed/solutions/12-sinkless.pdf"
+        }
+      },
+      {
+        "number": 13,
+        "slug": "13-color-hardness",
+        "title": "Трудность окраски: что следует из каких предпосылок",
+        "files": {
+          "notes": "pdf/distributed/notes/13-color-hardness.pdf",
+          "assignments": "pdf/distributed/assignments/13-color-hardness.pdf",
+          "hints": "pdf/distributed/hints/13-color-hardness.pdf",
+          "solutions": "pdf/distributed/solutions/13-color-hardness.pdf"
+        }
+      },
+      {
+        "number": 14,
+        "slug": "14-consensus-models",
+        "title": "Синхронность, отказы и consensus",
+        "files": {
+          "notes": "pdf/distributed/notes/14-consensus-models.pdf",
+          "assignments": "pdf/distributed/assignments/14-consensus-models.pdf",
+          "hints": "pdf/distributed/hints/14-consensus-models.pdf",
+          "solutions": "pdf/distributed/solutions/14-consensus-models.pdf"
+        }
+      },
+      {
+        "number": 15,
+        "slug": "15-flp",
+        "title": "FLP: асинхронный consensus при одном отказе",
+        "files": {
+          "notes": "pdf/distributed/notes/15-flp.pdf",
+          "assignments": "pdf/distributed/assignments/15-flp.pdf",
+          "hints": "pdf/distributed/hints/15-flp.pdf",
+          "solutions": "pdf/distributed/solutions/15-flp.pdf"
+        }
+      },
+      {
+        "number": 16,
+        "slug": "16-synthesis",
+        "title": "Синтез: расстояние, полоса, симметрия и отказы",
+        "files": {
+          "notes": "pdf/distributed/notes/16-synthesis.pdf",
+          "assignments": "pdf/distributed/assignments/16-synthesis.pdf",
+          "hints": "pdf/distributed/hints/16-synthesis.pdf",
+          "solutions": "pdf/distributed/solutions/16-synthesis.pdf"
+        }
+      }
+    ],
+    "extras": [
+      {
+        "title": "Экзамен",
+        "path": "pdf/distributed/exam.pdf"
+      },
+      {
+        "title": "Критерии экзамена",
+        "path": "pdf/distributed/exam_rubric.pdf"
+      }
+    ],
+    "hasHints": true
+  }
+];
