@@ -20,7 +20,7 @@ KINDS = ("notes", "assignments", "hints", "solutions")
 
 EXISTING_COURSES = {
     "fpt_course": ("fpt", "FPT-алгоритмы", "Параметризованная сложность и алгоритмы"),
-    "distributed_algorithms_course": ("distributed", "Распределённые алгоритмы", "Модели, локальные и глобальные алгоритмы, нижние оценки"),
+    "distributed_algorithms_course": ("distributed", "Распределённые алгоритмы", "Локальные алгоритмы, связь, причинность и consensus"),
 }
 
 
@@ -129,6 +129,16 @@ def main() -> None:
                 elif not output.exists() or output.stat().st_mtime < max(md.stat().st_mtime, template.stat().st_mtime):
                     compile_pdf(md, output, template)
                 extras.append({"title": label, "path": output.relative_to(HERE).as_posix()})
+        expected_pdfs = {
+            HERE / path
+            for lesson in lessons
+            for path in lesson["files"].values()
+            if path is not None
+        }
+        expected_pdfs.update(HERE / extra["path"] for extra in extras)
+        for stale_pdf in (DEST / course_id).rglob("*.pdf"):
+            if stale_pdf not in expected_pdfs:
+                stale_pdf.unlink()
         catalogue.append({"id": course_id, "name": name, "subtitle": subtitle, "lessons": lessons, "extras": extras, "hasHints": any(t["files"]["hints"] for t in lessons)})
     payload = json.dumps(catalogue, ensure_ascii=False, indent=2)
     (HERE / "catalogue.json").write_text(payload + "\n", encoding="utf-8")

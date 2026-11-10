@@ -196,182 +196,138 @@
   {
     "id": "distributed",
     "name": "Распределённые алгоритмы",
-    "subtitle": "Модели, локальные и глобальные алгоритмы, нижние оценки",
+    "subtitle": "Локальные алгоритмы, связь, причинность и consensus",
     "lessons": [
       {
         "number": 1,
-        "slug": "01-models",
-        "title": "Модель распределённого алгоритма",
+        "slug": "01-model-locality",
+        "title": "Модели, локальность и симметрия",
         "files": {
-          "notes": "pdf/distributed/notes/01-models.pdf",
-          "assignments": "pdf/distributed/assignments/01-models.pdf",
-          "hints": "pdf/distributed/hints/01-models.pdf",
-          "solutions": "pdf/distributed/solutions/01-models.pdf"
+          "notes": "pdf/distributed/notes/01-model-locality.pdf",
+          "assignments": "pdf/distributed/assignments/01-model-locality.pdf",
+          "hints": "pdf/distributed/hints/01-model-locality.pdf",
+          "solutions": "pdf/distributed/solutions/01-model-locality.pdf"
         }
       },
       {
         "number": 2,
-        "slug": "02-symmetry",
-        "title": "Симметрия, ID и окраска пути",
+        "slug": "02-local-algorithms",
+        "title": "Быстрые локальные алгоритмы: раскраска, MIS и matching",
         "files": {
-          "notes": "pdf/distributed/notes/02-symmetry.pdf",
-          "assignments": "pdf/distributed/assignments/02-symmetry.pdf",
-          "hints": "pdf/distributed/hints/02-symmetry.pdf",
-          "solutions": "pdf/distributed/solutions/02-symmetry.pdf"
+          "notes": "pdf/distributed/notes/02-local-algorithms.pdf",
+          "assignments": "pdf/distributed/assignments/02-local-algorithms.pdf",
+          "hints": "pdf/distributed/hints/02-local-algorithms.pdf",
+          "solutions": "pdf/distributed/solutions/02-local-algorithms.pdf"
         }
       },
       {
         "number": 3,
-        "slug": "03-color-reduction",
-        "title": "Детерминированное сокращение цветов",
+        "slug": "03-congest-global",
+        "title": "CONGEST: волны, расстояния и минимальный остов",
         "files": {
-          "notes": "pdf/distributed/notes/03-color-reduction.pdf",
-          "assignments": "pdf/distributed/assignments/03-color-reduction.pdf",
-          "hints": "pdf/distributed/hints/03-color-reduction.pdf",
-          "solutions": "pdf/distributed/solutions/03-color-reduction.pdf"
+          "notes": "pdf/distributed/notes/03-congest-global.pdf",
+          "assignments": "pdf/distributed/assignments/03-congest-global.pdf",
+          "hints": "pdf/distributed/hints/03-congest-global.pdf",
+          "solutions": "pdf/distributed/solutions/03-congest-global.pdf"
         }
       },
       {
         "number": 4,
-        "slug": "04-local-tasks",
-        "title": "Локальные задачи: matching, cover, MIS",
+        "slug": "04-random-and-lower-bounds",
+        "title": "Локальная случайность и пределы знания",
         "files": {
-          "notes": "pdf/distributed/notes/04-local-tasks.pdf",
-          "assignments": "pdf/distributed/assignments/04-local-tasks.pdf",
-          "hints": "pdf/distributed/hints/04-local-tasks.pdf",
-          "solutions": "pdf/distributed/solutions/04-local-tasks.pdf"
+          "notes": "pdf/distributed/notes/04-random-and-lower-bounds.pdf",
+          "assignments": "pdf/distributed/assignments/04-random-and-lower-bounds.pdf",
+          "hints": "pdf/distributed/hints/04-random-and-lower-bounds.pdf",
+          "solutions": "pdf/distributed/solutions/04-random-and-lower-bounds.pdf"
         }
       },
       {
         "number": 5,
-        "slug": "05-general-coloring",
-        "title": "Раскраска общего графа в LOCAL",
+        "slug": "05-round-elimination",
+        "title": "Устранение раундов и нижняя оценка для раскраски",
         "files": {
-          "notes": "pdf/distributed/notes/05-general-coloring.pdf",
-          "assignments": "pdf/distributed/assignments/05-general-coloring.pdf",
-          "hints": "pdf/distributed/hints/05-general-coloring.pdf",
-          "solutions": "pdf/distributed/solutions/05-general-coloring.pdf"
+          "notes": "pdf/distributed/notes/05-round-elimination.pdf",
+          "assignments": "pdf/distributed/assignments/05-round-elimination.pdf",
+          "hints": "pdf/distributed/hints/05-round-elimination.pdf",
+          "solutions": "pdf/distributed/solutions/05-round-elimination.pdf"
         }
       },
       {
         "number": 6,
-        "slug": "06-congest",
-        "title": "Ограничение полосы: CONGEST",
+        "slug": "06-luby-mis",
+        "title": "Быстрый рандомизированный MIS: алгоритм Люби",
         "files": {
-          "notes": "pdf/distributed/notes/06-congest.pdf",
-          "assignments": "pdf/distributed/assignments/06-congest.pdf",
-          "hints": "pdf/distributed/hints/06-congest.pdf",
-          "solutions": "pdf/distributed/solutions/06-congest.pdf"
+          "notes": "pdf/distributed/notes/06-luby-mis.pdf",
+          "assignments": "pdf/distributed/assignments/06-luby-mis.pdf",
+          "hints": "pdf/distributed/hints/06-luby-mis.pdf",
+          "solutions": "pdf/distributed/solutions/06-luby-mis.pdf"
         }
       },
       {
         "number": 7,
-        "slug": "07-global-tasks",
-        "title": "Глобальные задачи: расстояния и MST",
+        "slug": "07-network-decomposition",
+        "title": "Кластеризация сети и детерминированные алгоритмы",
         "files": {
-          "notes": "pdf/distributed/notes/07-global-tasks.pdf",
-          "assignments": "pdf/distributed/assignments/07-global-tasks.pdf",
-          "hints": "pdf/distributed/hints/07-global-tasks.pdf",
-          "solutions": "pdf/distributed/solutions/07-global-tasks.pdf"
+          "notes": "pdf/distributed/notes/07-network-decomposition.pdf",
+          "assignments": "pdf/distributed/assignments/07-network-decomposition.pdf",
+          "hints": "pdf/distributed/hints/07-network-decomposition.pdf",
+          "solutions": "pdf/distributed/solutions/07-network-decomposition.pdf"
         }
       },
       {
         "number": 8,
-        "slug": "08-random-local",
-        "title": "Рандомизированные локальные алгоритмы",
+        "slug": "08-sinkless",
+        "title": "Sinkless orientation и пределы устранения раундов",
         "files": {
-          "notes": "pdf/distributed/notes/08-random-local.pdf",
-          "assignments": "pdf/distributed/assignments/08-random-local.pdf",
-          "hints": "pdf/distributed/hints/08-random-local.pdf",
-          "solutions": "pdf/distributed/solutions/08-random-local.pdf"
+          "notes": "pdf/distributed/notes/08-sinkless.pdf",
+          "assignments": "pdf/distributed/assignments/08-sinkless.pdf",
+          "hints": "pdf/distributed/hints/08-sinkless.pdf",
+          "solutions": "pdf/distributed/solutions/08-sinkless.pdf"
         }
       },
       {
         "number": 9,
-        "slug": "09-covers",
-        "title": "Покрытия графов и неразличимость",
+        "slug": "09-congest-communication",
+        "title": "Полоса связи: транскрипты, разрезы и глобальные задачи",
         "files": {
-          "notes": "pdf/distributed/notes/09-covers.pdf",
-          "assignments": "pdf/distributed/assignments/09-covers.pdf",
-          "hints": "pdf/distributed/hints/09-covers.pdf",
-          "solutions": "pdf/distributed/solutions/09-covers.pdf"
+          "notes": "pdf/distributed/notes/09-congest-communication.pdf",
+          "assignments": "pdf/distributed/assignments/09-congest-communication.pdf",
+          "hints": "pdf/distributed/hints/09-congest-communication.pdf",
+          "solutions": "pdf/distributed/solutions/09-congest-communication.pdf"
         }
       },
       {
         "number": 10,
-        "slug": "10-neighborhoods",
-        "title": "Локальные окрестности как инструмент нижних оценок",
+        "slug": "10-causality-snapshots",
+        "title": "Причинность, векторные часы и глобальный снимок",
         "files": {
-          "notes": "pdf/distributed/notes/10-neighborhoods.pdf",
-          "assignments": "pdf/distributed/assignments/10-neighborhoods.pdf",
-          "hints": "pdf/distributed/hints/10-neighborhoods.pdf",
-          "solutions": "pdf/distributed/solutions/10-neighborhoods.pdf"
+          "notes": "pdf/distributed/notes/10-causality-snapshots.pdf",
+          "assignments": "pdf/distributed/assignments/10-causality-snapshots.pdf",
+          "hints": "pdf/distributed/hints/10-causality-snapshots.pdf",
+          "solutions": "pdf/distributed/solutions/10-causality-snapshots.pdf"
         }
       },
       {
         "number": 11,
-        "slug": "11-round-elimination",
-        "title": "Round elimination: один строгий шаг",
+        "slug": "11-synchronous-consensus",
+        "title": "Синхронный consensus: отказы и точная модель рассылки",
         "files": {
-          "notes": "pdf/distributed/notes/11-round-elimination.pdf",
-          "assignments": "pdf/distributed/assignments/11-round-elimination.pdf",
-          "hints": "pdf/distributed/hints/11-round-elimination.pdf",
-          "solutions": "pdf/distributed/solutions/11-round-elimination.pdf"
+          "notes": "pdf/distributed/notes/11-synchronous-consensus.pdf",
+          "assignments": "pdf/distributed/assignments/11-synchronous-consensus.pdf",
+          "hints": "pdf/distributed/hints/11-synchronous-consensus.pdf",
+          "solutions": "pdf/distributed/solutions/11-synchronous-consensus.pdf"
         }
       },
       {
         "number": 12,
-        "slug": "12-sinkless",
-        "title": "Sinkless orientation и пределы устранения раундов",
+        "slug": "12-flp",
+        "title": "FLP: почему асинхронный детерминированный consensus может не завершиться",
         "files": {
-          "notes": "pdf/distributed/notes/12-sinkless.pdf",
-          "assignments": "pdf/distributed/assignments/12-sinkless.pdf",
-          "hints": "pdf/distributed/hints/12-sinkless.pdf",
-          "solutions": "pdf/distributed/solutions/12-sinkless.pdf"
-        }
-      },
-      {
-        "number": 13,
-        "slug": "13-color-hardness",
-        "title": "Трудность окраски: что следует из каких предпосылок",
-        "files": {
-          "notes": "pdf/distributed/notes/13-color-hardness.pdf",
-          "assignments": "pdf/distributed/assignments/13-color-hardness.pdf",
-          "hints": "pdf/distributed/hints/13-color-hardness.pdf",
-          "solutions": "pdf/distributed/solutions/13-color-hardness.pdf"
-        }
-      },
-      {
-        "number": 14,
-        "slug": "14-consensus-models",
-        "title": "Синхронность, отказы и consensus",
-        "files": {
-          "notes": "pdf/distributed/notes/14-consensus-models.pdf",
-          "assignments": "pdf/distributed/assignments/14-consensus-models.pdf",
-          "hints": "pdf/distributed/hints/14-consensus-models.pdf",
-          "solutions": "pdf/distributed/solutions/14-consensus-models.pdf"
-        }
-      },
-      {
-        "number": 15,
-        "slug": "15-flp",
-        "title": "FLP: асинхронный consensus при одном отказе",
-        "files": {
-          "notes": "pdf/distributed/notes/15-flp.pdf",
-          "assignments": "pdf/distributed/assignments/15-flp.pdf",
-          "hints": "pdf/distributed/hints/15-flp.pdf",
-          "solutions": "pdf/distributed/solutions/15-flp.pdf"
-        }
-      },
-      {
-        "number": 16,
-        "slug": "16-synthesis",
-        "title": "Синтез: расстояние, полоса, симметрия и отказы",
-        "files": {
-          "notes": "pdf/distributed/notes/16-synthesis.pdf",
-          "assignments": "pdf/distributed/assignments/16-synthesis.pdf",
-          "hints": "pdf/distributed/hints/16-synthesis.pdf",
-          "solutions": "pdf/distributed/solutions/16-synthesis.pdf"
+          "notes": "pdf/distributed/notes/12-flp.pdf",
+          "assignments": "pdf/distributed/assignments/12-flp.pdf",
+          "hints": "pdf/distributed/hints/12-flp.pdf",
+          "solutions": "pdf/distributed/solutions/12-flp.pdf"
         }
       }
     ],
